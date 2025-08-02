@@ -76,6 +76,35 @@
     </div>
   </section>
 
+  <!-- Appointment Booking Form -->
+<section class="py-10 px-6 max-w-xl mx-auto">
+  <h3 class="text-2xl font-semibold text-center mb-6">Book an Appointment</h3>
+  <form id="bookingForm" class="space-y-4">
+    <input type="text" id="name" placeholder="Your Name" required class="w-full p-3 rounded border border-gray-300 focus:outline-pink-500" />
+    
+    <input type="tel" id="phone" placeholder="Phone Number" required class="w-full p-3 rounded border border-gray-300 focus:outline-pink-500" />
+    
+    <select id="service" required class="w-full p-3 rounded border border-gray-300 focus:outline-pink-500">
+      <option value="">Select Service</option>
+      <option>Facial + Massage Combo</option>
+      <option>Pedicure</option>
+      <option>Manicure</option>
+      <option>Brow Shaping</option>
+      <option>Lash Lift</option>
+      <option>Makeup</option>
+      <option>Bridal Glam</option>
+      <option>Home Service</option>
+    </select>
+
+    <input type="datetime-local" id="datetime" required class="w-full p-3 rounded border border-gray-300 focus:outline-pink-500" />
+
+    <textarea id="message" rows="3" placeholder="Anything else?" class="w-full p-3 rounded border border-gray-300 focus:outline-pink-500"></textarea>
+
+    <button type="submit" class="w-full bg-pink-600 text-white py-3 rounded-full hover:bg-pink-700 transition">Submit & Book</button>
+  </form>
+</section>
+
+
   <!-- Location & Contact -->
   <section class="bg-white py-8 px-6 text-center border-t">
     <h4 class="text-lg font-semibold mb-2">📍 Visit Us</h4>
